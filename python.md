@@ -2,7 +2,7 @@
 
 #### sleep_in
 
-'''
+```
 def sleep_in(weekday, vacation):
   if(weekday):
     return True
@@ -14,4 +14,4 @@ def sleep_in(weekday, vacation):
     return False
   else:
     return False
-'''
+```
