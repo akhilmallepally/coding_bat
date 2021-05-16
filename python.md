@@ -1,6 +1,6 @@
-###Warm up1
+### Warm up1
 
-####sleep_in
+#### sleep_in
 
 '''
 def sleep_in(weekday, vacation):
@@ -14,4 +14,4 @@ def sleep_in(weekday, vacation):
     return False
   else:
     return False
-    '''
+'''
