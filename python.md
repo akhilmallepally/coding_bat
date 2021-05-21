@@ -1,6 +1,6 @@
-### Warm up1
+## Warm up1
 
-#### sleep_in
+### sleep_in
 
 ```
 def sleep_in(weekday, vacation):
@@ -16,7 +16,7 @@ def sleep_in(weekday, vacation):
     return False
 ```
 
-#### monkey_trouble
+### monkey_trouble
 
 ```
 def monkey_trouble(a_smile, b_smile):
@@ -28,7 +28,7 @@ def monkey_trouble(a_smile, b_smile):
     return False
 ```
 
-#### sum_double
+### sum_double
 
 ```
 def sum_double(a, b):
@@ -37,3 +37,26 @@ def sum_double(a, b):
   else:
     return a+b
 ```
+
+### diff21
+
+```
+def diff21(n):
+  return (2*(n-21)) if n>21 else 21-n 
+```
+
+
+### parrot_trouble
+
+```
+def parrot_trouble(talking, hour):
+  return True if (talking and (hour<7 or hour>20)) else False
+```
+
+### makes10
+
+```
+def makes10(a, b):
+  return True if (a ==10 or b ==10 or a+b == 10) else False
+```
+
