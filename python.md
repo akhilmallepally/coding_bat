@@ -60,3 +60,39 @@ def makes10(a, b):
   return True if (a ==10 or b ==10 or a+b == 10) else False
 ```
 
+
+### pos_neg
+
+```
+def makes10(a, b):
+  return True if (a ==10 or b ==10 or a+b == 10) else False
+```
+
+### not_string
+
+```
+def not_string(str):
+  if str[0:3]!= 'not':
+    return ("not"+" "+str)
+  else:
+    return str
+```
+
+
+### front_back
+
+```
+def front_back(str):
+  if len(str)<=1:
+    return str
+  return str[-1]+str[1:-1]+str[0]
+```
+
+### front3
+
+```
+def front3(str):
+  if len(str)<3:
+    return str*3
+  return str[0:3]*3
+```
