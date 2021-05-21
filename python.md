@@ -102,6 +102,21 @@ def makes10(a, b):
   return True if (a ==10 or b ==10 or a+b == 10) else False
 ```
 
+### near_hundred
+
+Given an int n, return True if it is within 10 of 100 or 200. Note: abs(num) computes the absolute value of a number.
+
+
+near_hundred(93) → True<br/>
+near_hundred(90) → True<br/>
+near_hundred(89) → False
+
+```
+def near_hundred(n):
+  if (abs(100-n)<=10) or (abs(200-n)<=10) :
+    return True
+  return False
+```
 
 ### pos_neg
 
@@ -134,7 +149,20 @@ def not_string(str):
     return str
 ```
 
+### missing_char
 
+Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..len(str)-1 inclusive).
+
+
+missing_char('kitten', 1) → 'ktten'<br/>
+missing_char('kitten', 0) → 'itten'<br/>
+missing_char('kitten', 4) → 'kittn'
+
+```
+def missing_char(str, n):
+    return str[0:n]+str[n+1:]
+```
+   
 ### front_back
 
 Given a string, return a new string where the first and last chars have been exchanged.
