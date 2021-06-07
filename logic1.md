@@ -111,3 +111,51 @@ def alarm_clock(day, vacation):
     else:
       return "10:00"
 ```
+
+
+### love6
+
+The number 6 is a truly great number. Given two int values, a and b, return True if either one is 6. Or if their sum or difference is 6. Note: the function abs(num) computes the absolute value of a number.
+
+love6(6, 4) → True</br>
+love6(4, 5) → False</br>
+love6(1, 5) → True
+
+```
+def love6(a, b):
+  if a ==6 or b ==6 or a+b==6 or a-b ==6 or b-a==6 :
+    return True
+  return False
+```
+
+### in1to10 
+
+Given a number n, return True if n is in the range 1..10, inclusive. Unless outside_mode is True, in which case return True if the number is less or equal to 1, or greater or equal to 10.
+
+in1to10(5, False) → True</br>
+in1to10(11, False) → False</br>
+in1to10(11, True) → True
+
+```
+def in1to10(n, outside_mode):
+  if not outside_mode and (n in range(1,11)):
+    return True
+  elif outside_mode and (n<=1 or n>=10):
+    return True
+  return False
+```
+
+### near_ten
+
+Given a non-negative number "num", return True if num is within 2 of a multiple of 10. Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. See also: Introduction to Mod
+
+near_ten(12) → True</br>
+near_ten(17) → False</br>
+near_ten(19) → True
+
+```
+def near_ten(num):
+  if num%10<=2 or num%10>=8:
+    return True
+  return False
+```
