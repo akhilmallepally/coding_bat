@@ -51,3 +51,63 @@ def squirrel_play(temp, is_summer):
   else:
     return 60<=temp<=90
 ```
+
+
+### caught_speeding
+
+You are driving a little too fast, and a police officer stops you. Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket. If speed is 60 or less, the result is 0. If speed is between 61 and 80 inclusive, the result is 1. If speed is 81 or more, the result is 2. Unless it is your birthday -- on that day, your speed can be 5 higher in all cases.
+
+caught_speeding(60, False) → 0</br>
+caught_speeding(65, False) → 1</br>
+caught_speeding(65, True) → 0
+
+```
+def caught_speeding(speed, is_birthday):
+  if is_birthday and speed >60:
+    return 1
+  elif not is_birthday and speed <=60:
+    return 0
+  elif speed in range(61,81):
+    return 1
+  elif not is_birthday and speed>=81:
+    return 2
+  else:
+    return False
+```
+
+### sorta_sum  
+
+Given 2 ints, a and b, return their sum. However, sums in the range 10..19 inclusive, are forbidden, so in that case just return 20.
+
+sorta_sum(3, 4) → 7</br>
+sorta_sum(9, 4) → 20</br>
+sorta_sum(10, 11) → 21
+
+```
+def sorta_sum(a, b):
+  if (a+b) in range(10,20):
+    return 20
+  return a+b
+```
+
+### alarm_clock 
+
+Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation, return a string of the form "7:00" indicating when the alarm clock should ring. Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00". Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off".
+
+alarm_clock(1, False) → '7:00'</br>
+alarm_clock(5, False) → '7:00'</br>
+alarm_clock(0, False) → '10:00'
+
+```
+def alarm_clock(day, vacation):
+  if vacation:
+    if day !=0 and day !=6:
+      return "10:00"
+    else:
+      return "off"
+  elif not vacation:
+    if day !=0 and day !=6:
+      return "7:00"
+    else:
+      return "10:00"
+```
